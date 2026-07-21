@@ -1,0 +1,5 @@
+bucket         = "replace-with-unique-terraform-state-bucket"
+key            = "eks/dev/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "terraform-locks"
+encrypt        = true
