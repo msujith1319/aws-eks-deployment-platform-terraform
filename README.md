@@ -39,32 +39,7 @@ MongoDB and Redis use internal `ClusterIP` services and are accessible only insi
 
 > Replace the placeholder CloudFront origin with the actual ALB DNS name after the Kubernetes Ingress creates the load balancer.
 
-## Repository structure
 
-```text
-.
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── providers.tf
-├── backend.tf
-├── backend.hcl.example
-├── terraform.tfvars.example
-├── deployment/
-│   ├── ingress.yaml
-│   ├── frontend/
-│   ├── backend/
-│   ├── database/
-│   └── redis/
-└── modules/
-    ├── vpc/
-    ├── eks/
-    ├── iam/
-    ├── bastion-host/
-    ├── s3-dynamodb/
-    ├── helm/
-    └── waf-cdn-acm-route53/
-```
 
 ## Prerequisites
 
